@@ -1,0 +1,173 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Verifying adatin hotel Login Page",
+        "description": "",
+        "id": "verify-adatin-hotel-details;verifying-adatin-hotel-login-page;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 16521867100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the adatin hotel page",
+            "match": {
+              "location": "PageLoginSteps.hotel_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4571004800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User should enter \"Viki5497\" and \"3RPLV4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Viki5497\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"3RPLV4\"",
+                  "offset": 33
+                }
+              ],
+              "location": "PageLoginSteps.logInCredentials(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13118560200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User should select \"Sydney\", \"Hotel Creek\", \"Standard\", \"2 - Two\", \"20/10/2020\", \"27/10/2020\", \"1 - One\", \"0 - None\"  and click search.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sydney\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"Hotel Creek\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"Standard\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"2 - Two\"",
+                  "offset": 56
+                },
+                {
+                  "val": "\"20/10/2020\"",
+                  "offset": 67
+                },
+                {
+                  "val": "\"27/10/2020\"",
+                  "offset": 81
+                },
+                {
+                  "val": "\"1 - One\"",
+                  "offset": 95
+                },
+                {
+                  "val": "\"0 - None\"",
+                  "offset": 106
+                }
+              ],
+              "location": "PageLoginSteps.user_should_select(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3586798400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should select the required hotel and click continue button.",
+            "match": {
+              "location": "PageLoginSteps.user_should_select_the_required_hotel()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8367827000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should enter \"Viki\", \"R\", \"72 xxx, yyy, zzz\", \"9876543210654321\", \"VISA\", \"July\", \"2021\", \"007\" and click Book now button.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Viki\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"R\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"72 xxx, yyy, zzz\"",
+                  "offset": 31
+                },
+                {
+                  "val": "\"9876543210654321\"",
+                  "offset": 51
+                },
+                {
+                  "val": "\"VISA\"",
+                  "offset": 71
+                },
+                {
+                  "val": "\"July\"",
+                  "offset": 79
+                },
+                {
+                  "val": "\"2021\"",
+                  "offset": 87
+                },
+                {
+                  "val": "\"007\"",
+                  "offset": 95
+                }
+              ],
+              "location": "PageLoginSteps.user_should_enter(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8528496200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should check the booking id.",
+            "match": {
+              "location": "PageLoginSteps.checkBookingId()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verify adatin hotel details",
+    "description": "",
+    "id": "verify-adatin-hotel-details",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/PageLogin.feature",
+    "tags": []
+  }
+]
