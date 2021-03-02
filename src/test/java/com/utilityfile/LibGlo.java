@@ -12,12 +12,24 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class LibGlo {
 	public static WebDriver driver;
 	public static final String USERNAME = "mohamadidris1";
 	public static final String AUTOMATE_KEY = "ocHy4wAdYKzcqqruyzhk";
 	public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 	public static DesiredCapabilities caps;
+	
+	
+	public  void launchBrowser(String data) {
+	WebDriverManager.chromedriver().setup();
+	driver = new ChromeDriver();
+	driver.get(data);
+	max();
+	hang();
+
+	}
 	
 	
 	public void browserStack(String data) throws MalformedURLException {

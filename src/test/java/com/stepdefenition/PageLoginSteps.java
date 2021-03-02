@@ -17,7 +17,8 @@ public class PageLoginSteps extends LibGlo {
 	
 	@Given("User is on the adatin hotel page")
 	public void hotel_page() throws MalformedURLException {
-	browserStack("http://adactinhotelapp.com/");
+//	browserStack("http://adactinhotelapp.com/");
+		launchBrowser("http://adactinhotelapp.com/");
 	}
 	@When("User should enter {string} and {string}")
 	public void logInCredentials(String user, String pass) {
